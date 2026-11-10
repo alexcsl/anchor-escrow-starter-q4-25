@@ -1,0 +1,7 @@
+[env]
+OPENSSL_NO_VENDOR = "1"
+OPENSSL_DIR = 'C:\Program Files\OpenSSL-Win64'
+OPENSSL_INCLUDE_DIR = 'C:\Program Files\OpenSSL-Win64\include'
+OPENSSL_LIB_DIR = 'C:\Program Files\OpenSSL-Win64\lib\VC\x64\MD'
+OPENSSL_STATIC = "1"
+OPENSSL_LIBS = "libssl_static:libcrypto_static"

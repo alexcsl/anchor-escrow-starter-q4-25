@@ -6,7 +6,7 @@ pub mod state;
 pub use instructions::*;
 pub use state::*;
 
-declare_id!("5UFZzEt5vU9fxtUAgsD11z63ApZEHJ5bH7Z4QpFwZ2CQ");
+declare_id!("26pDZymZcyYtAYUFegoaLAv3cVpNw7mndJgpw9Tsf2TQ");
 
 #[program]
 pub mod anchor_escrow_q4_25 {
@@ -24,4 +24,9 @@ pub mod anchor_escrow_q4_25 {
         ctx.accounts.deposit()?;
         ctx.accounts.withdraw_and_close_vault()
     }
+
+    pub fn update(ctx: Context<Update>, receive: u64) -> Result<()> {
+        ctx.accounts.update(receive)
+    }
+
 }

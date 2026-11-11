@@ -1,0 +1,26 @@
+rtk : WARNING: `anchor-lang` version(0.32.1) and the current CLI version(1.1.2) don't match.
+At line:1 char:62
++ ... y -Path "docs" -Force | Out-Null; rtk proxy anchor build 2>&1 | Tee-O ...
++                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARNING: `ancho...2) don't match.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+	This can lead to unwanted behavior. To use the same CLI version, add:
+
+	[toolchain]
+	anchor_version = "0.32.1"
+
+	to Anchor.toml
+
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized] target(s) in 7.37s
+   Compiling anchor-escrow-q4-25 v0.1.0 (D:\Web3\Turbin3\Week 
+2\Assignment\anchor-escrow-starter-q4-25\programs\anchor-escrow-q4-25)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 41.02s
+     Running unittests src\lib.rs (D:\Web3\Turbin3\Week 
+2\Assignment\anchor-escrow-starter-q4-25\target\debug\deps\anchor_escrow_q4_25-c9ea5863fffaccaa.exe)
+     Running tests\escrow.rs (D:\Web3\Turbin3\Week 
+2\Assignment\anchor-escrow-starter-q4-25\target\debug\deps\escrow-04a1f2aef572e9a0.exe)

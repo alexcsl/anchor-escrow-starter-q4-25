@@ -1,0 +1,29 @@
+rtk :     Blocking waiting for file lock on package cache
+At line:1 char:187
++ ... EXITCODE }; rtk proxy cargo test --test escrow -- --nocapture 2>&1 |  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (    Blocking wa...n package cache:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+   Compiling anchor-escrow-q4-25 v0.1.0 (D:\Web3\Turbin3\Week 
+2\Assignment\anchor-escrow-starter-q4-25\programs\anchor-escrow-q4-25)
+warning: use of deprecated module `solana_sdk::system_program`: Use `solana_system_interface::program` instead
+  --> programs\anchor-escrow-q4-25\tests\escrow.rs:14:5
+   |
+14 |     system_program,
+   |     ^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+warning: `anchor-escrow-q4-25` (test "escrow") generated 1 warning
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 10.56s
+     Running tests\escrow.rs (target\debug\deps\escrow-dd5a9e3233ce773a.exe)
+
+running 4 tests
+test make ... ok
+test update ... ok
+test refund ... ok
+test take ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.38s
+
